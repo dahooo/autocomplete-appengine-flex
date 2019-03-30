@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Autocomplete</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+<link rel="stylesheet" href="css/bootcomplete.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly-additions.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/jquery.bootcomplete.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="container-fluid">
+			<div class="clearfix row" id="content">
+				<div id="main" class="col-md-12 clearfix" role="main">
+					<article class="post">
+						<section class="post_content">
+							<div class="sections sections-zebra">
+								<div class="row">
+									<header class="page-tabs-header">
+										<h1>Online Store Product Category</h1>
+									</header>
+								</div>
+								<div class="row">
+									<div class="starter-template">
+										<p class="lead">
+											An autocomplete demo for an E-commerce website.<br>
+										</p>
+
+										<input id="example1" type="text" name="country"
+											placeholder="Enter a Product Name" class="form-control">
+									</div>
+								</div>
+							</div>
+						</section>
+					</article>
+				</div>
+			</div>
+
+
+
+			<script type="text/javascript">
+			$('#example1').bootcomplete({
+				url : 'autocomplete'
+			});
+			</script>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/js/patternfly.min.js"></script>
+</body>
+</html>
